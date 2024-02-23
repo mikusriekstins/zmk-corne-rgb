@@ -39,10 +39,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB    &kp N1   &kp N2   &kp N3      &kp N4            &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0   &kp BSPC
+&to 3      &kp F11  &kp F12  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans   &kp PAGE_UP
+&kp LSHFT  &kp F1   &kp F2   &kp F3      &kp F4            &kp F5        &kp F6    &kp F7    &kp F8    &kp F9     &kp F10  &kp PAGE_DOWN
+                             &kp LGUI    &trans            &kp SPACE     &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -54,19 +54,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL         &kp AT           &kp HASH         &kp DLLR    &kp PRCNT     &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &bl BL_ON   &bl BL_INC    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &bl BL_OFF  &bl BL_DEC    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI         &trans      &kp SPACE     &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
         settings {
             bindings = <
-&ext_power EP_TOG  &trans           &trans           &bl BL_TOG  &trans  &trans    &out OUT_TOG  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&rgb_ug RGB_ON     &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &bl BL_INC  &trans  &trans    &bt BT_NXT    &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_OFF    &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &bl BL_DEC  &trans  &trans    &bt BT_PRV    &trans  &trans  &trans  &trans  &trans
-                                                     &trans      &trans  &trans    &trans        &trans  &trans
+&ext_power EP_TOG  &trans           &trans           &trans           &bl BL_TOG  &rgb_ug RGB_TOG    &out OUT_TOG  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&to 0              &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans      &trans             &bt BT_NXT    &trans  &trans  &trans  &trans  &trans
+&trans             &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans      &trans             &bt BT_PRV    &trans  &trans  &trans  &trans  &tog 0
+                                                     &trans           &trans      &trans             &trans        &trans  &trans
             >;
         };
     };
